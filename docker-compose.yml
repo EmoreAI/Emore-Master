@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: immutable_ai
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - TWITTER_API_KEY=${TWITTER_API_KEY}
+      - TWITTER_API_SECRET=${TWITTER_API_SECRET}
+      - TWITTER_ACCESS_TOKEN=${TWITTER_ACCESS_TOKEN}
+      - TWITTER_ACCESS_TOKEN_SECRET=${TWITTER_ACCESS_TOKEN_SECRET}
+      - PDF_DOWNLOAD_DIR=/app/downloads
+      - LOG_LEVEL=INFO
+      - DEFAULT_TOPIC=medicine
+    volumes:
+      - ./downloads:/app/downloads
+    restart: unless-stopped
