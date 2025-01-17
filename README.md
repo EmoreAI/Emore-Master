@@ -1,6 +1,6 @@
 # Emore AI
 
-![Emore](Emore.jpeg)
+![Emore](Emore.jpg)
 
 Emore AI is an innovative application designed to streamline the process of conducting meta-analyses on academic whitepapers within the medical field. By leveraging cutting-edge AI technology, Immutable AI automates the extraction, analysis, and dissemination of insights from scholarly articles. The application scrapes relevant papers from bioRxiv and medRxiv, performs a sophisticated analysis using OpenAI's ChatGPT, and shares the synthesized findings on Twitter, making it easier for researchers and the public to access and understand complex scientific data.
 
